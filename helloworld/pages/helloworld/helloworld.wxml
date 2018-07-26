@@ -1,0 +1,60 @@
+<!-- 文本的绑定 -->
+<view hidden='true'>
+{{message1}}
+  <view>
+    {{message2}}
+  </view>
+</view>
+
+<!-- 属性值的绑定 -->
+<view hidden='true'>
+  <text data-name="{{data_name}}"></text>
+</view>
+
+<!-- 表达式的绑定 -->
+<view hidden='{{flag? true : false}}'>Hidden</view>
+
+<!-- 列表的渲染 -->
+<view hidden='true'>
+  <block wx:for="{{items}}" wx:for-item="item" wx:key="index">
+    <view>{{index + 1}}:{{item.name}}</view>
+  </block>
+</view>
+
+<!-- 条件渲染 -->
+<view hidden='true'>
+  <view>今天吃什么</view>
+  <view wx:if="{{condition === 1}}">饺子</view>
+  <view wx:elif="{{condition === 2}}">嫂子</view>
+  <view wx:else>我选择死亡</view>
+</view>
+
+<!-- 模板引用 -->
+<view hidden='true'>
+  <template name="tempItem">
+    <view>
+      <view>收件人:{{name}}</view>
+      <view>联系方式:{{tel_numer}}</view>
+      <view>地址:{{address}}</view>
+    </view>
+  </template>
+  <template is="tempItem" data="{{...item}}"></template>
+</view>
+
+<!-- import -->
+<view hidden='true'>
+  <import src="a.wxml"></import>
+  <template is="a"></template>
+</view>
+
+<!-- import的作用域,可以看到的是c.wxml文件并没有被渲染出来 -->
+<view hidden='true'>
+  <import src="b.wxml"></import>
+  <template is="b"></template>
+</view>
+
+<!-- include -->
+<view hidden='true'>
+  <include src="d.wxml"/>
+  <template is="d"></template>
+</view>

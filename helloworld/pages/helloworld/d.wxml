@@ -1,0 +1,6 @@
+<template name="d">
+  <view>
+    this is a.wxml
+  </view>
+</template>
+<view>Hello World!</view>
