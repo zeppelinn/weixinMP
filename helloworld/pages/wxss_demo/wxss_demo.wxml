@@ -1,0 +1,11 @@
+<!-- 样式导入 -->
+<!-- 字体颜色是在assets.wxss中定义，然后被wxss_demo.wxss文件通过@import导入 -->
+<view class='container' hidden='true'>
+  Hello World
+</view>
+
+<!-- 内联样式 -->
+<!-- 一般的静态样式，就卸载外联样式文件中，动态样式则一般通过如下的方式来写 -->
+<view style='width:500rpx;height:30px;background-color:{{colorValue}}' hidden='true'>
+  hello world
+</view>

@@ -1,0 +1,4 @@
+.container{
+  color: red !important;
+  /* 虽然wxss_demo.wxss文件中也定义了.container的color属性，但是由于这里对color添加了!important，所有优先级被提升到无穷高 */
+}

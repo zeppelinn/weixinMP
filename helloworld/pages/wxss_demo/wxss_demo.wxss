@@ -1,0 +1,6 @@
+@import './assets.wxss';
+
+.container{
+  border: 1px solid #000;
+  color: blue;
+}
