@@ -1,0 +1,15 @@
+<!-- 通过标签声明模块 -->
+<wxs module="m1">
+  module.exports = {
+    message:"Hello world!"
+  }
+</wxs>
+<view hidden='true'>
+  {{m1.message}}
+</view>
+
+<!-- 通过引入文件来声明模块 -->
+<view hidden='true'>
+  <wxs module="m2" src="./m1.wxs"></wxs>
+  <view>{{m2.message}}</view>
+</view>
