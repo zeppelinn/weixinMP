@@ -1,0 +1,30 @@
+.btn{
+  width: 100%;
+  height: 40rpx;
+  text-align: center;
+  margin-top: 20rpx;
+}
+
+.container1{
+  width: 500rpx;
+  height:600rpx;
+  border: 1px blue solid;
+  margin-top: 40rpx;
+  margin-left: 120rpx;
+}
+
+.container2{
+  width: 350rpx;
+  height:400rpx;
+  border: 1px orangered solid;
+  margin-top: 40rpx;
+  margin-left: 75rpx;
+}
+
+.container3{
+  width: 250rpx;
+  height:200rpx;
+  border: 1px rgb(81, 247, 4) solid;
+  margin-top: 40rpx;
+  margin-left: 45rpx;
+}

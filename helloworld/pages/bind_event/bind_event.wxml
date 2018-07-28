@@ -1,0 +1,17 @@
+<!-- 绑定点击事件 -->
+<view hidden='true'>
+  <view class='btn' bindtap='clickMe'>
+    点击我
+  </view>
+</view>
+
+<!-- 事件流 看控制台打印出的冒泡过程 -->
+<view class='container1' bindtap='clickA'>
+  Container-A
+  <view class='container2' bindtap='clickB'>
+    Container-B
+    <view class='container3' bindtap='clickC'>
+    Container-C    
+    </view>
+  </view>
+</view>
