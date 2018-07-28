@@ -6,12 +6,27 @@
 </view>
 
 <!-- 事件流 看控制台打印出的冒泡过程 -->
-<view class='container1' bindtap='clickA'>
-  Container-A
-  <view class='container2' bindtap='clickB'>
-    Container-B
-    <view class='container3' bindtap='clickC'>
-    Container-C    
+<view hidden='true'>
+  <view class='container1' bindtap='clickA'>
+    Container-A
+    <view class='container2' bindtap='clickB'>
+      Container-B
+      <view class='container3' bindtap='clickC'>
+      Container-C
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- 通过catch去拦截事件的冒泡 -->
+<view>
+  <view class='container1' bindtap='clickA' capture-bind:tap="captureClickA">
+    Container-A
+    <view class='container2' bindtap='clickB' capture-bind:tap="captureClickB">
+      Container-B
+      <view class='container3' bindtap='clickC' capture-catch:tap="captureClickC">
+      Container-C
+      </view>
     </view>
   </view>
 </view>

@@ -66,16 +66,26 @@ Page({
     console.log(e);
   },
 
-  clickA: function(e){
+  clickA: function(){
     console.log('click container-A');
   },
 
-  clickB: function(e){
+  clickB: function(){
     console.log('click container-B');
   },
 
-  clickC: function(e){
+  clickC: function(){
     console.log('click container-C');
-  }
+  },
+
+  captureClickA: function(){
+    console.log('captureClickA');
+  },
+  captureClickB: function(){
+    console.log('captureClickB');
+  },
+  captureClickC: function(){
+    console.log('captureClickC');
+  },
 
 })
